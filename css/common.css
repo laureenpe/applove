@@ -1,0 +1,306 @@
+/*
+ * Clases reutilizables para el proyecto
+ * (Aquí pueden ir las clases de tu grid)
+ */
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.link {
+    /*Se le aplica un font-weight para convertir en bold al texto*/
+    font-weight: 700;
+    /*Se le agrega padding para agregar un espacio entre los textos*/
+    padding: 21px;
+    /*crea cajas que son de bloque y en línea de forma simultanea*/
+    display: inline-block;
+}
+
+.logo {
+    float: right;
+}
+
+header {
+    position: fixed;
+    background: white;
+    width: 100%;
+    top: 0;
+}
+
+.menu {
+    padding: 14px 70px;
+    overflow: auto;
+}
+
+
+/*Home*/
+
+#home {
+    background-image: url(../assets/images/bg-home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 554px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#home .container {
+    color: white;
+    padding: 70px;
+}
+
+.text-home {
+    font-size: 53px;
+}
+
+.btn-home {
+    background: #2Ecc71;
+    color: #fff;
+    padding: 11px 20px;
+    border-radius: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 63px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+
+/*Modal*/
+
+.box-services {
+    cursor: pointer;
+}
+
+.box-services:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#box-services-modal {
+    background-color: rgba(240, 30, 80, 0.85);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#box-services-modal .modal-body {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px;
+}
+
+#box-services-modal .modal-body h5,
+#box-services-modal .modal-body h6 {
+    color: whitesmoke;
+}
+
+#box-services-modal .modal-body h5 {
+    font-size: 2em;
+}
+
+#box-services-modal .modal-body h6 {
+    font-size: 1em;
+}
+
+#box-services-modal .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#box-services-modal .close img {
+    width: 60px;
+}
+
+.hide {
+    display: none;
+}
+
+
+/*sección services*/
+
+#services {
+    background-color: #f17c72;
+    text-align: center;
+    color: #fff;
+    padding: 70px 7px;
+}
+
+.box-services {
+    display: inline-block;
+    width: 30%;
+    margin-top: 63px;
+}
+
+.text-services {
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+
+/*section work*/
+
+.box-work {
+    margin: 0 auto;
+}
+
+.box-work img {
+    width: 79%;
+    margin-left: 11%;
+    padding: 36px;
+}
+
+.box-work h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.box-work h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 10px;
+    margin-left: 45px;
+    margin-right: 48px;
+}
+
+
+/*LAYOUT*/
+
+.container {
+    /*Se ve hasta 1200 pixeles*/
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+
+/*Comienzo a hacer las columnas*/
+
+
+/*Selector de muchas cosas, todo lo que comience con col- va a tener estos valores:*/
+
+[class*="col-"] {
+    min-height: 7px;
+    float: left;
+    padding: 12px;
+}
+
+.col-4 {
+    /*(4/12)*100*/
+    width: 33.333333%;
+}
+
+
+/*para obligarla a q la imagen se mantenga dentro del grid - esto ya esta arriba en otro ejercicio*/
+
+.img-responsive {
+    max-width: 100%;
+    width: 100%;
+}
+
+
+/*FOOTER*/
+
+footer {
+    text-align: center;
+    height: 70px;
+    background-color: #373b47;
+    color: white;
+<<<<<<< HEAD
+    padding-top: 7px;
+}
+
+/*/DINAMICO */
+.box-services{
+  cursor: pointer;
+}
+
+.box-services:hover{
+  background-color: rgba(255,255,255,0.2);
+}
+
+/*Modal*/
+#box-services-modal{
+  background-color: rgba(240,30,80,0.85);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#box-services-modal .modal-body{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px;
+}
+
+#box-services-modal .modal-body h5,
+#box-services-modal .modal-body h6{
+  color: whitesmoke;
+}
+#box-services-modal .modal-body h5{
+  font-size: 2em;
+}
+#box-services-modal .modal-body h6{
+  font-size: 1em;
+}
+
+#box-services-modal .close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#box-services-modal .close img{
+  width: 60px;
+}
+
+.hide{
+  display: none;
+}
+
+
+/*WORK SECTION 3*/
+.work h1 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+     padding: 1%;
+
+}
+.work h2 {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 1%;
+
+}
+.work{
+    width: 100%;
+}
+.hero img  {
+   margin: 0 11% 10%;
+   width: 80%;
+}
+
+
+
